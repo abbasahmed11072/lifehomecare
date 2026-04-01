@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Life Home Care</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fb;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    top: 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo { height: 100px; }
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #0a3d62;
+    font-weight: 600;
+}
+
+nav a:hover { color:#00a896; }
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(10,61,98,0.85), rgba(0,168,150,0.7)),
+    url('https://source.unsplash.com/1600x700/?hospital');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 { font-size: 40px; }
+
+.btn {
+    background: #00a896;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    margin: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* PRODUCTS GRID */
+.products {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    max-width:900px;
+    margin:auto;
+}
+
+.product {
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.product a {
+    text-decoration:none;
+    color:#0a3d62;
+    font-weight:600;
+}
+
+/* SECTION */
+.section {
+    padding:60px 20px;
+    text-align:center;
+}
+
+/* FORM */
+input, textarea {
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:6px;
+    border:1px solid #ddd;
+}
+
+/* FLOAT BUTTONS */
+.call-btn, .whatsapp-btn {
+    position: fixed;
+    right: 20px;
+    border-radius: 50%;
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.call-btn { bottom: 90px; background:#0a3d62; }
+.whatsapp-btn { bottom: 20px; background:#25D366; }
+
+/* FOOTER */
+footer h3 { margin-bottom:10px; }
+
+footer p {
+    margin:6px 0;
+    font-size:14px;
+    opacity:0.85;
+}
+
+footer a:hover { color:#00a896; }
+
+</style>
+
+<script>
+setTimeout(function(){
+    if(!localStorage.getItem("waShown")){
+        window.open("https://wa.me/916303932545?text=Hello%20I%20need%20medical%20equipment", "_blank");
+        localStorage.setItem("waShown", true);
+    }
+}, 7000);
+</script>
+
+</head>
+
+<body>
+
+<header>
+<div style="display:flex; align-items:center; gap:10px;">
+<img src="logo.jpg" class="logo">
+<h2 style="color:#0a3d62;">Life <span style="color:#00a896;">Home Care</span></h2>
+</div>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#about">About</a>
+  <a href="#products">Products</a>
+  <a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Medical Equipment for Rental & Sale</h1>
+<p>Trusted Home Care Solutions</p>
+
+<button class="btn" onclick="window.location.href='tel:7416337110'">Call Now</button>
+<button class="btn" onclick="window.location.href='https://wa.me/916303932545'">WhatsApp</button>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="section about" style="background:white;">
+
+<h2 style="margin-bottom:10px;">About Us</h2>
+
+<h1 style="color:#00a896; text-align:center; margin-bottom:25px; font-size:34px;">
+Life Home Care
+</h1>
+
+<div style="max-width:950px; margin:auto;">
+
+<p style="line-height:1.9; margin-bottom:18px; font-size:16px;">
+Welcome to <span style="color:#e63946; font-weight:600;">Life Home Care</span>, your trusted partner for medical equipment rental and home healthcare solutions. We are committed to providing high-quality, reliable, and affordable equipment that ensures patients receive the best care in the comfort of their homes.
+</p>
+
+<p style="line-height:1.9; margin-bottom:18px; font-size:16px;">
+At <span style="color:#00a896; font-weight:600;">Life Home Care</span>, we offer a wide range of medical devices including hospital beds, oxygen concentrators, mobility aids, and ICU support equipment. Whether you need short-term recovery support or long-term care solutions, we deliver equipment that prioritizes comfort, safety, and ease of use.
+</p>
+
+<p style="line-height:1.9; margin-bottom:18px; font-size:16px;">
+We understand that choosing the right medical equipment can be overwhelming. That’s why our dedicated team ensures quick delivery, proper installation, and continuous support — making your experience smooth and stress-free.
+</p>
+
+<p style="line-height:1.9; font-size:16px;">
+Our mission is to create a safe and supportive healing environment at home through dependable healthcare solutions. With a focus on quality service and customer satisfaction, <span style="color:#e63946; font-weight:600;">Life Home Care</span> is your reliable partner in care.
+</p>
+
+</div>
+
+<!-- HIGHLIGHTS -->
+<div style="margin-top:40px; display:flex; justify-content:center; gap:25px; flex-wrap:wrap;">
+
+<div style="background:#f1f5f9; padding:20px; border-radius:10px; width:220px;">
+<h3>⚡ Fast Delivery</h3>
+<p>Quick setup at your doorstep</p>
+</div>
+
+<div style="background:#f1f5f9; padding:20px; border-radius:10px; width:220px;">
+<h3>🛠️ Installation</h3>
+<p>Professional support included</p>
+</div>
+
+<div style="background:#f1f5f9; padding:20px; border-radius:10px; width:220px;">
+<h3>📞 24/7 Support</h3>
+<p>Always available for help</p>
+</div>
+
+<div style="background:#f1f5f9; padding:20px; border-radius:10px; width:220px;">
+<h3>💰 Affordable</h3>
+<p>Best pricing guaranteed</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="products" class="section" style="background:white;">
+<h2>Our Products</h2>
+
+<div class="products">
+  <!-- Patient Care Equipment -->
+  <div class="product"><a href="https://wa.me/916303932545?text=Hospital Bed">🛏️ Hospital Bed</a></div>
+  <div class="product"><a href="https://wa.me/916303932545?text=Air Mattress">🛏️ Air Mattress</a></div>
+  <div class="product"><a href="https://wa.me/916303932545?text=Wheelchair">♿ Wheelchair</a></div>
+  <div class="product"><a href="https://wa.me/916303932545?text=Walker">🚶 Walker</a></div>
+
+  <!-- Respiratory Equipment -->
+  <div class="product"><a href="https://wa.me/916303932545?text=Oxygen Concentrator">🫁 Oxygen Concentrator</a></div>
+  <div class="product"><a href="https://wa.me/916303932545?text=Oxygen Cylinder">🫁 Oxygen Cylinder</a></div>
+  <div class="product"><a href="https://wa.me/916303932545?text=CPAP Machine">😷 CPAP Machine</a></div>
+  <div class="product"><a href="https://wa.me/916303932545?text=BiPAP Machine">😷 BiPAP Machine</a></div>
+  <div class="product"><a href="https://wa.me/916303932545?text=Ventilator">🫁 Ventilator</a></div>
+  <div class="product"><a href="https://wa.me/916303932545?text=Nebulizer">🫁 Nebulizer</a></div>
+
+  <!-- Monitoring Devices -->
+  <div class="product"><a href="https://wa.me/916303932545?text=Patient Monitor">📊 Patient Monitor (5-Parameter)</a></div>
+  <div class="product"><a href="https://wa.me/916303932545?text=Blood Pressure Machine">📊 Blood Pressure Machine (BP Machine)</a></div>
+  <div class="product"><a href="https://wa.me/916303932545?text=Pulse Oximeter">📊 Pulse Oximeter</a></div>
+  <div class="product"><a href="https://wa.me/916303932545?text=Infrared Thermometer">📊 Infrared Thermometer</a></div>
+
+  <!-- Medical Pumps & Support -->
+  <div class="product"><a href="https://wa.me/916303932545?text=Infusion Pump">💉 Infusion Pump</a></div>
+  <div class="product"><a href="https://wa.me/916303932545?text=Syringe Pump">💉 Syringe Pump</a></div>
+  <div class="product"><a href="https://wa.me/916303932545?text=DVT Pump">💉 DVT Pump</a></div>
+
+  <!-- Additional Equipment -->
+  <div class="product"><a href="https://wa.me/916303932545?text=Portable Oxygen Unit">⭐ Portable Oxygen Unit</a></div>
+  <div class="product"><a href="https://wa.me/916303932545?text=Other Home Care Medical Devices">⭐ Other Home Care Medical Devices (on request)</a></div>
+</div>
+</section>
+
+</section>
+<!-- CONTACT -->
+<section id="contact" style="padding:70px 20px; background:linear-gradient(135deg,#0a3d62,#00a896); color:white; text-align:center;">
+
+<h2>Enquiry Now</h2>
+
+<div style="max-width:600px; margin:auto; background:white; padding:30px; border-radius:12px; color:black;">
+
+<form action="https://formsubmit.co/lifehomecare12@gmail.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
+<textarea name="message" placeholder="Your Requirement"></textarea>
+
+<button class="btn" style="width:100%; background:#e63946;">Submit</button>
+</form>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#3b3f45; color:white; padding:60px 20px;">
+
+<div style="max-width:1100px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:40px;">
+
+<div>
+<h2 style="color:#00a896;">Life Home Care</h2>
+<p>Medical Equipment for Rent & Sale</p>
+</div>
+
+<div>
+<h3>Navigation</h3>
+<p>› Hospital Beds</p>
+<p>› Oxygen Concentrator</p>
+<p>› CPAP / BiPAP</p>
+<p>› Wheelchair & Walker</p>
+<p>› Contact Us</p>
+</div>
+
+<div>
+<h3>Contact</h3>
+<p>📍 Hyderabad</p>
+<p>📞 <a href="tel:7416337110" style="color:white;">7416337110</a></p>
+<p>📞 <a href="tel:6303932545" style="color:white;">6303932545</a></p>
+<p>💬 <a href="https://wa.me/916303932545" style="color:#25D366;">WhatsApp</a></p>
+<p>📧 lifehomecare12@gmail.com</p>
+</div>
+
+</div>
+
+<hr style="margin:40px 0; border-color:#555;">
+
+<p style="text-align:center;">© 2026 Life Home Care. All rights reserved.</p>
+
+</footer>
+
+<!-- FLOAT -->
+<a href="tel:6303932545" class="call-btn">📞</a>
+<a href="https://wa.me/916303932545" class="whatsapp-btn">💬</a>
+
+</body>
+</html>
